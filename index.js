@@ -25,7 +25,7 @@ express()
       res.render('pages/db', results );
       client.release();
     } catch (err) {
-      console.error(err);
+      console.error(err, "this is an error");
       res.send("Error " + err);
     }
   })
